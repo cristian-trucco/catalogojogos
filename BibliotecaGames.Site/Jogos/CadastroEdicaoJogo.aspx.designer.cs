@@ -31,22 +31,22 @@ namespace BibliotecaGames.Site.Jogos {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RfvTitulo;
         
         /// <summary>
-        /// ValorPago control.
+        /// TxtValorPago control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ValorPago;
+        protected global::System.Web.UI.WebControls.TextBox TxtValorPago;
         
         /// <summary>
-        /// DataCompra control.
+        /// TxtDataCompra control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DataCompra;
+        protected global::System.Web.UI.WebControls.TextBox TxtDataCompra;
         
         /// <summary>
         /// FileUpLoadImage control.
@@ -94,15 +94,6 @@ namespace BibliotecaGames.Site.Jogos {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RfvEditor;
         
         /// <summary>
-        /// BtnGravar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnGravar;
-        
-        /// <summary>
         /// valSum control.
         /// </summary>
         /// <remarks>
@@ -110,5 +101,23 @@ namespace BibliotecaGames.Site.Jogos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary valSum;
+        
+        /// <summary>
+        /// LblMensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMensagem;
+        
+        /// <summary>
+        /// BtnGravar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnGravar;
     }
 }

@@ -12,13 +12,13 @@
 
     <div class="form-group">
         <label for="exampleInputEmail">Valor Pago</label>
-        <asp:TextBox runat="server" ID="ValorPago" CssClass="form-control" TextMode="Number"></asp:TextBox>
+        <asp:TextBox runat="server" ID="TxtValorPago" CssClass="form-control" TextMode="Number"></asp:TextBox>
 
     </div>
 
     <div class="form-group">
         <label for="exampleInputEmail">Data Compra</label>
-        <asp:TextBox runat="server" ID="DataCompra" TextMode="Date" CssClass="form-control"></asp:TextBox>
+        <asp:TextBox runat="server" ID="TxtDataCompra" TextMode="Date" CssClass="form-control"></asp:TextBox>
     </div>
 
     <div class="form-group">
@@ -37,9 +37,12 @@
         <asp:RequiredFieldValidator ID="RfvEditor" runat="server" ControlToValidate="DdlEditor" ErrorMessage="É necessário preencher o campo Editor" Text="*"></asp:RequiredFieldValidator>
     </div>
 
-    <asp:Button ID="BtnGravar" Text="Gravar" CssClass="btn btn-primary" runat="server" />
-
         <asp:ValidationSummary ID="valSum" DisplayMode="BulletList" EnableClientScript="true" ForeColor="Red" HeaderText="Deve preencher todos os campos"
-            runat="server" />
+            runat="server" /> 
+    <br />
+    
+    <asp:Label runat="server" ID="LblMensagem"></asp:Label>
+     <asp:Button ID="BtnGravar" Text="Gravar" CssClass="btn btn-primary" runat="server" OnClick="BtnGravar_Click1" />
 
+    <a href="Catalago.aspx">Voltar ao catálogo de jogos</a>
 </asp:Content>

@@ -21,6 +21,7 @@
                     </asp:MenuItem>
                 </Items>
             </asp:Menu>
+            <</div>
             <div style="margin:60px 0px 0px 30px;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

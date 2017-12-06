@@ -51,5 +51,50 @@ namespace BibliotecaGames.DAL
                 Conexao.Desconectar();
             }
         }
-    }
+
+        public int InserirJogo(Jogo jogo)
+        {
+           
+                try
+                {
+
+                    var command = new SqlCommand();
+                    command.Connection = Conexao.connection;
+                    command.CommandText = @"INSERT INTO[dbo].[jogos]
+                                                   ([titulo]
+                                                   ,[valorPago]
+                                                   ,[dataCompra]
+                                                   ,[id_editor]
+                                                   ,[id_genero]
+                                                   ,[imagem])
+                                             VALUES
+                                                   (@titulo
+                                                   ,@valorPago
+                                                   ,@dataCompra
+                                                   ,@id_editor
+                                                   ,@id_genero
+                                                   ,@imagem)";
+
+                command.Parameters.AddWithValue("@titulo", jogo.Titulo);
+                command.Parameters.AddWithValue("@valorPago", jogo.ValorPago);
+                command.Parameters.AddWithValue("@dataCompra", jogo.DataCompra);
+                command.Parameters.AddWithValue("@id_editor", jogo.IdEditor);
+                command.Parameters.AddWithValue("@id_genero", jogo.IdGenero);
+                command.Parameters.AddWithValue("@imagem", jogo.Imagem);
+
+                Conexao.Conectar();
+                return command.ExecuteNonQuery();    
+                
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    Conexao.Desconectar();
+                }
+            }
+        }
 }
